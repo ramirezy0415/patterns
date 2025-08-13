@@ -20,6 +20,16 @@ export function isSongInPlaylist(playlist, song) {
  */
 export function isAllEven(numbers) {
   // TODO
+  let result = [];
+  if (numbers.length === 0) return undefined;
+
+  for (let i = 0; i < numbers.length; i++) {
+    let element = numbers[i];
+    if (element % 2 === 0) {
+      result.push(element);
+    }
+  }
+  return result.length === numbers.length;
 }
 
 /**
