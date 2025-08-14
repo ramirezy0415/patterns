@@ -39,8 +39,14 @@ export function makeTriangle(size) {
   if (typeof size !== "number") return null;
   if (size === 0) return [];
 
-  const board = [];
-  return board;
+  const triangle = [];
+  for (let i = 0; i < size; i++) {
+    triangle.push([]);
+    for (let j = 0; j < i + 1; j++) {
+      triangle[i].push("-");
+    }
+  }
+  return triangle;
 }
 
 /**
