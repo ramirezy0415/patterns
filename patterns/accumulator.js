@@ -93,7 +93,6 @@ export function countPresent(attendance) {
  * @returns `null` if `dna` is not a string
  */
 export function complementDNA(dna) {
-  // TODO
   if (typeof dna !== "string") {
     return null;
   }
